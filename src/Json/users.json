@@ -1,0 +1,83 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "role": "utilisateur",
+      "name": "Jean Dupont",
+      "email": "jean.dupont@example.com",
+      "password": "hashed_password_123",
+      "createdAt": "2025-03-08T10:00:00Z",
+      "status": "paid",
+      "gender": "male"
+    },
+    {
+      "id": "2",
+      "role": "coach",
+      "name": "Marie Curie",
+      "email": "marie.curie@example.com",
+      "password": "hashed_password_456",
+      "specialty": "Développement personnel",
+      "createdAt": "2025-03-08T12:30:00Z",
+      "status": "pending",
+      "gender": "female"
+    },
+    {
+      "id": "3",
+      "role": "entreprise",
+      "name": "Paul Martin",
+      "email": "paul.martin@techcorp.com",
+      "password": "hashed_password_789",
+      "companyName": "TechCorp",
+      "industry": "Technologie",
+      "createdAt": "2025-03-08T15:45:00Z",
+      "status": "unpaid"
+    },
+    {
+      "id": "4",
+      "role": "utilisateur",
+      "name": "Sophie Lefèvre",
+      "email": "sophie.lefevre@example.com",
+      "password": "hashed_password_101",
+      "createdAt": "2025-03-08T09:15:00Z",
+      "status": "paid",
+      "gender": "female"
+    },
+    {
+      "id": "5",
+      "role": "coach",
+      "name": "Luc Besson",
+      "email": "luc.besson@example.com",
+      "password": "hashed_password_202",
+      "specialty": "Orientation professionnelle",
+      "createdAt": "2025-03-08T14:20:00Z",
+      "status": "pending",
+      "gender": "male"
+    },
+    {
+      "id": "c3ea",
+      "role": "utilisateur",
+      "email": "Ahmed@ahmed.com",
+      "password": "12345",
+      "name": "Ahmed",
+      "status": "unpaid",
+      "gender": "male"
+    },
+    {
+      "id": "9e18",
+      "role": "entreprise",
+      "email": "elite@click.ma",
+      "password": "123456",
+      "name": "ELTE CLICK",
+      "companyName": "ELTE CLICK",
+      "industry": "Digital"
+    },
+    {
+      "id": "e901",
+      "role": "utilisateur",
+      "email": "flan@flan.com",
+      "password": "123456",
+      "name": "flan",
+      "gender": "male"
+    }
+  ]
+}

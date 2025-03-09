@@ -1,0 +1,25 @@
+/* Contenu des stats */
+.stats-content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.stat-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 24px;
+  color: #bd1414;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+body.dark-mode .stat-number {
+  color: #FFF3B0;
+}

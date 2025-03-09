@@ -1,0 +1,76 @@
+/* Conteneur principal */
+.dashboard-container {
+  margin-top: 100px;
+  margin-left: -200px;
+  display: flex;
+  min-height: 100vh;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Contenu principal (Navbar + Cards) */
+.dashboard-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 250px;
+  padding: 20px;
+}
+
+/* Grille des cartes */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Style des cartes */
+.dashboard-grid > div {
+  background: linear-gradient(135deg, #FFF3B0, #FFD54F);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #1A1A1A;
+}
+
+.dashboard-grid > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(239, 83, 80, 0.3);
+}
+
+/* Mode sombre */
+body.dark-mode .dashboard-content {
+  background: #1A1A1A;
+  color: #FFF3B0;
+}
+
+body.dark-mode .dashboard-grid > div {
+  background: linear-gradient(135deg, #333333, #1A1A1A);
+  color: #FFF3B0;
+}
+
+body.dark-mode .dashboard-grid > div:hover {
+  box-shadow: 0 6px 20px rgba(255, 202, 40, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard-content {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .dashboard-content {
+    margin-left: 0;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}

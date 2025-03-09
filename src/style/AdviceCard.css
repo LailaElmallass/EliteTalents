@@ -1,0 +1,9 @@
+
+.advice-card p {
+  margin-top: 15px;
+  color: #000000;
+}
+
+body.dark-mode .advice-card p {
+  color: #FFF3B0;
+}

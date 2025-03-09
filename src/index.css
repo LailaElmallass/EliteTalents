@@ -1,0 +1,60 @@
+
+button {
+    width: 100%;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+
+/* 📱 Mobile (moins de 400px) */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+    
+    input, select, button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* 📟 Tablettes (400px à 768px) */
+@media (min-width: 400px) and (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+
+/* 🖥️ Grands écrans (plus de 1024px) */
+@media (min-width: 1024px) {
+    .container {
+        width: 400px;
+    }
+}
+
+  
+.stats-card, .advice-card, .training-card {
+background: transparent !important ;
+border: 1px solid #bd1414;
+
+}
+.stats-card h2, .advice-card h2, .training-card h2{
+    color: #bd1414;
+    
+  }
+
+  body.dark-mode .stats-card, 
+  body.dark-mode .advice-card, 
+  body.dark-mode .training-card {
+    border: 1px solid #FF0000; 
+  }
