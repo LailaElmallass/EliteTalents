@@ -10,7 +10,7 @@ const Dashboard = () => {
   return (
     <div className="dashboard-container">
       <Sidebar />
-      <div className="dashboard-content">
+      <div className="main-content">
         <Navbar />
         <div className="dashboard-grid">
           <StatsCard />

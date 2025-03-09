@@ -9,6 +9,7 @@ import TrainingCard from '../components/TrainingCard';
 import UserTable from "../components/UserTable";
 import '../style/Dashboard.css';
 
+
 const User_dashboard = () => {
   const dispatch = useDispatch();
   const { users, loading, error } = useSelector((state) => state.users);

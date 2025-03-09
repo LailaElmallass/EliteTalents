@@ -7,8 +7,8 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* Contenu principal (Navbar + Cards) */
-.dashboard-content {
+/* Contenu principal (Navbar + Cards + Table) */
+.main-content {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -39,8 +39,32 @@
   box-shadow: 0 6px 20px rgba(239, 83, 80, 0.3);
 }
 
+/* Styles pour la table des utilisateurs */
+.user-table-container {
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
 /* Mode sombre */
-body.dark-mode .dashboard-content {
+body.dark-mode .main-content {
   background: #1A1A1A;
   color: #FFF3B0;
 }
@@ -54,10 +78,27 @@ body.dark-mode .dashboard-grid > div:hover {
   box-shadow: 0 6px 20px rgba(255, 202, 40, 0.3);
 }
 
+body.dark-mode .user-table-container {
+  background: #333333;
+  color: #FFF3B0;
+}
+
+body.dark-mode th {
+  background-color: #444444;
+}
+
+body.dark-mode td {
+  border-color: #444444;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
-  .dashboard-content {
+  .main-content {
     margin-left: 200px;
+  }
+  
+  .user-table-container {
+    overflow-x: auto;
   }
 }
 
@@ -66,7 +107,7 @@ body.dark-mode .dashboard-grid > div:hover {
     flex-direction: column;
   }
 
-  .dashboard-content {
+  .main-content {
     margin-left: 0;
   }
 
